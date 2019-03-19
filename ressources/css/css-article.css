@@ -1,0 +1,389 @@
+/*GLOBAL
+=============*/
+html {
+    background-color: #fff;
+}
+
+h1 {
+    font-family: "Kanit", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    word-spacing: 8px;
+    font-weight: 500;
+    font-size: 90px;
+}
+
+p {
+    font-family: "Kanit", sans-serif;
+    font-size: 17px;
+}
+
+h2,
+h3 {
+    font-family: "Kanit", sans-serif;
+    text-transform: uppercase;
+
+}
+
+h2 {
+    font-size: 27px;
+}
+
+/*HEADER
+=============*/
+
+header {
+    background-image: linear-gradient(rgba(72, 83, 97, 0.6), rgba(40, 49, 59, 0.74)), url(../images/favela.jpg);
+    /*    height: 80vh;*/
+    padding: 200px 0;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.return {
+    position: absolute;
+    top: 20px;
+    margin-left: 5px;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+
+}
+
+.return:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.home_title {
+    text-align: center;
+    /*    margin-top: 25%;*/
+    vertical-align: middle;
+}
+
+.home_title h1 {
+    font-size: 300%;
+
+}
+
+.home_title p {
+    color: #fff;
+    text-transform: none;
+    /*    font-size: 15px;*/
+}
+
+
+/*POPUP
+=============*/
+.modal-body{
+    font-family: 'Kanit',sans-serif;
+/*    height: 110px;*/
+}
+.modal-header h6 {
+    font-family: 'Kanit',sans-serif;
+    text-transform: uppercase;
+}
+
+.modal-body .report a,.modal-body .remove a {
+    color: black;
+    font-size: 18px; 
+}
+.report:hover,.remove:hover {
+    display: block;
+    background-color: rgba(255, 0, 0, 0.79);
+}
+.report a:hover,.remove a:hover {
+    text-decoration: none;   
+}
+.report-answer ul {
+    padding: 0;
+    list-style: none;
+}
+.report-answer ul li input{
+
+}
+
+/*ARTICLE
+=============*/
+.article {
+    border-bottom: 1px solid black;
+}
+
+.article-content h2 {
+    margin-top: 30px;
+}
+
+.article-content p {
+    text-align: justify;
+    /*    font-size: 10px;*/
+}
+
+.categorie {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.categorie a {
+    font-family: 'Kanit', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+}
+
+.categorie a span {
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+
+/*PARTAGE
+=============*/
+.social-network-share {
+/*    display: block;*/
+    border-right: 1px solid #de0000;
+    padding: 0;
+    height: 25%;
+}
+
+.social-network-share p {
+    margin-top: 30px;
+    font-size: 30px;
+    color: black;
+}
+
+.social-network-share ul {
+    /*    position: relative;*/
+    list-style: none;
+}
+
+.facebook-bis i,
+.twitter-bis i,
+.instagram-bis i,
+.snapchat-bis i,
+.twitch-bis i {
+    color: black;
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+.facebook-bis i {
+    color: #3b5998;
+}
+
+.twitter-bis i {
+    color: #1da1f2;
+}
+
+.instagram-bis i {
+    color: #fb3958;
+}
+
+.snapchat-bis i {
+    color: #ffff00;
+}
+
+.twitch-bis i {
+    color: #6440a5;
+    font-size: 30px
+}
+
+/*COMMENTAIRE
+=============*/
+cite {
+    font-size: 20px;
+    display: block;
+    margin-top: 20px;
+}
+
+cite img {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    margin-right: 10px;
+
+}
+
+cite a i {
+    position: relative;
+    /*    color: black;*/
+    color: #d3d3d3;
+    float: right;
+}
+
+cite a i:hover {
+    color: black;
+}
+
+cite p time span {
+    color: #a0a0a0;
+    /*couleur time*/
+}
+
+.comment-area {
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
+    /*    padding-bottom: 30px;*/
+}
+
+.comments .btn,
+.send,
+.cancel {
+    font-family: 'Kanit', sans-serif;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 0 10px;
+    margin: 0 5px;
+    margin-bottom: 20px;
+}
+
+.comments .btn-like:hover {
+    border: 1px solid red;
+    /*    padding: 0px 13px;*/
+    color: red;
+}
+
+
+.comments .btn-reply:hover {
+    border: 1px solid #4874c4;
+    /*    padding: 0px 13px;*/
+    color: #4874c4;
+}
+
+.comments .btn-dislike:hover {
+    border: 1px solid dimgrey;
+    /*    padding: 0px 13px;*/
+    color: dimgrey;
+}
+
+.reply-comment {
+    font-size: 17px;
+    margin-left: 50px;
+}
+
+.re-reply-comment {
+    font-size: 15px;
+    margin-left: 55px;
+}
+
+.button {
+    float: right;
+    margin-top: 10px;
+}
+
+/*AJOUT COMMENTAIRE
+=============*/
+.message {
+    width: 100%
+}
+
+form {
+    padding: 20px 0;
+}
+
+/*voir .send et .cancel dans le menu 'COMMENTAIRE'
+
+
+/*MOBILE APP
+=============*/
+
+.mobile-app {
+    background-image: linear-gradient(rgba(72, 83, 97, 0.46), rgba(40, 49, 59, 0.74)), url(../images/people-concert.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    border: none;
+
+}
+
+.phone-image {
+    background-image: url(../images/phone.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 200px;
+/*    width: 300px;*/
+    vertical-align: middle;
+    margin: 30px 0px;
+    text-align: center;
+/*    right: 50px;*/
+}
+
+.mobile-app h2, .mobile-app p {
+    color: #fff;
+}
+.mobile-app-content h2{
+    margin: 30px 0;
+    font-size: 200%;
+    text-align: center;
+}
+
+.app-btn {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.app-btn .google_play_button{
+    margin-right: 10px;
+}
+
+/*FOOTER
+=============*/
+footer {
+    background-color: black;
+    height: 50%;
+}
+
+.copyright,
+.social-network {
+    text-align: center;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+.copyright a {
+    color: white;
+}
+
+.copyright p {
+    font-family: 'Kanit', sans-serif;
+}
+
+.facebook i,
+.twitter i,
+.instagram i,
+.snapchat i,
+.twitch i {
+    color: white;
+    font-size: 30px;
+    /*
+    padding-right: 5px;
+    padding-bottom: 20px;
+*/
+    padding: 20px 5px 0;
+}
+
+.facebook i:hover {
+    color: #3b5998;
+    font-size: 33px;
+}
+
+.twitter i:hover {
+    color: #1da1f2;
+    font-size: 33px;
+}
+
+.instagram i:hover {
+    color: #fb3958;
+    font-size: 33px;
+}
+
+.snapchat i:hover {
+    color: #ffff00;
+    font-size: 33px;
+}
+
+.twitch i:hover {
+    color: #6440a5;
+    font-size: 33px;
+}

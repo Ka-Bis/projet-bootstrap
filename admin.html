@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Gump</title>
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+
+
+    <!-- STYLE-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="ressources/css/css-admin.css">
+    
+</head>
+    
+    
+<body>
+    <header>
+<!--
+        <div class="header">
+        <h2><a href="index.html">Gump</a></h2>
+        <p><a href="index.html" class="text-white">Retour au site <i class="fas fa-home"></i></a></p>
+        </div>
+-->
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            
+            <div class="container">
+                <a class="navbar-brand" href="index.html">GUMP</a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-label="Menu pour mobile">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                
+             <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="admin.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="far fa-chart-bar"></i> Stats</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-mobile-alt"></i> Mobile app setting</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-cogs"></i> Setting</a>
+                    </li>
+                    
+                    
+                </ul>
+                 
+                 <!-- Button trigger modal connexion -->
+                
+                 <div class="user">
+                     <a class="home-btn text-white"  href="#connexion" data-toggle="modal"><i class="fas fa-home"></i> Retour au site</a>
+                 </div>
+                 
+            </div>                
+                
+            </div>
+            
+        </nav>
+
+    </header>
+
+<!-- STATS SITE 
+========================= -->    
+<!--
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 visit">
+                    <div>
+                    <h5>Visits this month</h5>
+                    <p><i class="fas fa-globe-europe"></i><span>100</span></p>
+                    </div>
+                    
+                </div>
+
+                <div class="col-sm-3 sign-up">
+                    <div>
+                    <h5>Registration</h5>
+                    <p><i class="fas fa-users"></i><span>+5</span></p>
+                    </div>
+                    
+                </div>
+
+                <div class="col-sm-3 article">
+                    
+                    
+                    <div>
+                    <h5>Top article</h5>
+                    <p><i class="far fa-newspaper"></i><span><a href="article.html">Projet <br>Bootstrap</a></span></p>
+                    </div>
+                    
+                    
+                </div>
+                
+                <div class="col-sm-3 download">
+                    <h5>Download</h5>
+
+                    <p><i class="fas fa-download"></i><span>124</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    
+    <section>
+    <div class="container">
+    <div class="row row-sm">
+        <div class="col-sm-6 col-xl-3 my-3">
+        <div class="bg-success rounded overflow-hidden">
+          <div class="pd-25 d-flex align-items-center">
+            <i class="fas fa-globe-europe icon"></i>
+        <!--                  <img src="ressources/images/_ionicons_svg_md-globe.svg" style="width: 25%;"/>-->
+            <div class="mg-l-20">
+              <p class="font-weight-normal text-uppercase text-white" style="border-bottom: 2px solid grey;font-size: 20px;">Visits this month</p>
+              <p class="font-weight-normal text-white text-kanit float-right" style="font-size: 30px;">224</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="col-sm-6 col-xl-3 my-3">
+        <div class="bg-danger rounded overflow-hidden">
+          <div class="pd-25 d-flex align-items-center">
+            <i class="fas fa-users icon"></i>
+            <div class="mg-l-20">
+              <p class="font-weight-normal text-uppercase text-white" style="border-bottom: 2px solid grey;font-size: 20px;">Registration</p>
+              <p class="font-weight-normal text-white text-kanit float-right" style="font-size: 30px;">+50</p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-sm-6 col-xl-3 my-3">
+        <div class="bg-primary rounded overflow-hidden">
+          <div class="pd-25 d-flex align-items-center">
+            <i class="far fa-newspaper icon"></i>
+            <div class="mg-l-20">
+              <p class="font-weight-normal text-uppercase text-white" style="border-bottom: 2px solid grey;font-size: 20px;margin-left: 15px;">Top article</p>
+              <p class="font-weight-normal text-kanit float-right" style="font-size: 20px;margin-bottom: 30px;margin-left: 15px;"><a href="article.html" target="_blank" class=" text-white">Projet Bootstrap</a></p>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="col-sm-6 col-xl-3 my-3">
+        <div class="bg-warning rounded overflow-hidden">
+          <div class="pd-25 d-flex align-items-center">
+            <i class="fas fa-download icon"></i>
+            <div class="mg-l-20">
+              <p class="font-weight-normal text-uppercase text-white" style="border-bottom: 2px solid grey;font-size: 20px;text-align:right;">Download</p>
+              <p class="font-weight-normal text-white text-kanit float-right" style="font-size: 30px;">60</p>
+            </div>
+          </div>
+        </div>
+        </div>
+<!--
+          <div class="col-sm-6 col-xl-3 mg-t-20 mg-sm-t-0">
+            <div class="bg-danger rounded overflow-hidden">
+              <div class="pd-25 d-flex align-items-center">
+                <i class="ion ion-bag tx-60 lh-0 tx-white op-7"></i>
+                <div class="mg-l-20">
+                  <p class="tx-10 tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10">Registration</p>
+                  <p class="tx-24 tx-white tx-lato tx-bold mg-b-2 lh-1">200</p>
+                </div>
+              </div>
+            </div>
+          </div>
+-->
+<!--
+          <div class="col-sm-6 col-xl-3 mg-t-20 mg-xl-t-0">
+            <div class="bg-warning rounded overflow-hidden">
+              <div class="pd-25 d-flex align-items-center">
+                <i class="ion ion-monitor tx-60 lh-0 tx-white op-7"></i>
+                <div class="mg-l-20">
+                  <p class="tx-10 tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10">Top article</p>
+                  <p class="tx-24 tx-white tx-lato tx-bold mg-b-2 lh-1">54.45%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+-->
+<!--
+          <div class="col-sm-6 col-xl-3 mg-t-20 mg-xl-t-0">
+            <div class="bg-primary rounded overflow-hidden">
+              <div class="pd-25 d-flex align-items-center">
+                <i class="ion ion-clock tx-60 lh-0 tx-white op-7"></i>
+                <div class="mg-l-20">
+                  <p class="tx-10 tx-spacing-1 tx-mont tx-medium tx-uppercase tx-white-8 mg-b-10">Download</p>
+                  <p class="tx-24 tx-white tx-lato tx-bold mg-b-2 lh-1">32.16%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+-->
+        </div>    
+    </div>
+    
+    </section>
+    
+<!-- EDIT ARTICLE
+========================= -->    
+    
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 edit-article">
+                    <table>
+                        <h3>Edit article / Video</h3>
+                        <tr>
+                           <th>Name</th>
+                           <th>Type</th>
+                           <th>Date</th>
+                           <th>Autor</th>
+                           <th>Edit</th>
+                           <th>Remove</th>
+                        </tr>
+                        <tr>
+                           <td>Projet Bootstrap</td>
+                           <td>Article</td>
+                           <td>14/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>Streaming musical : [...]</td>
+                           <td>Article</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>Gagne tes places pour le concert de Jorge à Paris</td>
+                            <td>Article</td>
+                            <td>15/03/2019</td>
+                            <td>Ksy</td>
+                            <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                            <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td>This is the International Women's Day 2019</td>
+                            <td>Article</td>
+                            <td>08/03/2019</td>
+                            <td>Ksy</td>
+                            <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                            <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>PNL : Ils annoncent leur come-back</td>
+                           <td>Article</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>Lorem ipsum dolor sit amet</td>
+                           <td>Article</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>Decouvrez (nom), le photographe des rappeurs</td>
+                           <td>Article</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>Comment faire une prod en 5 etapes</td>
+                           <td>Article</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>    
+                        <tr>
+                            <td>Nouveau freestyle du rappeur (nom)</td>
+                            <td>Article</td>
+                            <td>15/03/2019</td>
+                            <td>Ksy</td>
+                            <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                            <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>Hamza : Les chiffres [...]</td>
+                           <td>Article</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>Post Malone - Sunflower</td>
+                           <td>Music</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>J. Cole - Middle Child</td>
+                           <td>Music</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>Post Malone - Wow</td>
+                           <td>Music</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>Blueface - Thothiana</td>
+                           <td>Music</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>Travis Scott - Sicko Mode</td>
+                           <td>Music</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>Ninho - Goutte d'eau</td>
+                           <td>Music</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>RK - C'est mon sang</td>
+                           <td>Music</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>Heuss l'enfoiré - Khapta</td>
+                           <td>Music</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>Djadja et Dinaz - Possédé</td>
+                           <td>Music</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>Lomepal - Trop beau</td>
+                           <td>Music</td>
+                           <td>15/03/2019</td>
+                           <td>Ksy</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        <tr>
+                           <td>Comment fonctionne [..]</td>
+                           <td>Video</td>
+                           <td>15/03/2019</td>
+                           <td>...</td>
+                           <td><a href="#"><i class="far fa-edit edit-btn"></i></a></td>
+                           <td><a href="#"><i class="far fa-trash-alt remove-btn"></i></a></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><a href="#"><i class="fas fa-plus-circle add-btn"></i></a></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                
+<!-- ARTICLE STAT
+========================= -->   
+                
+                
+                <div class="col-md-5 article-stat">
+                    <div class="row">
+                        <div class="col-md-12 chart-visit-img">
+                            <h3>Visites</h3>
+                            <img src="http://chart.apis.google.com/chart?chs=400x300&amp;cht=bhg&amp;chtt=&amp;chd=s:Uacclx319&amp;chco=185c5e&amp;chdl=visits&amp;chxl=0:|Sept|Aug|July|Jun|May|Apr|Mar|Feb|Jan|&amp;chxt=y"/>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-md-12 connexion-stat">
+                        <div class="chart-connexion-img">
+                            <h3>Connnexion</h3>
+                            <img src="http://chart.apis.google.com/chart?chs=400x300&amp;cht=p&amp;chtt=&amp;chd=s:xWaj9YcnK&amp;chco=659697&amp;chdl=connexion&amp;chxl=0:|Jan|Feb|Mar|Apr|May|Jun|July|Aug|Sept|&amp;chxt=x"/>
+                        </div>
+                    </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12 user-setting mt-5 mb-5">
+                            <h3>Newly registered user</h3>
+                            <div class="row">
+                                <div class="col-md-12 bg-white user-area">
+                                    <p><i class="far fa-calendar mt-2"></i> Janvier 2019 - Mars 2019</p>
+                                    <div class="user">
+                                        <table class="tab-user">
+                                        <tr>
+                                            <td><img src="ressources/images/brooke-cagle.jpg" class="img-user"/></td>
+                                            <td>Brooke Caggle<br><span>@brooke.caggle</span></td>
+                                            <td>2 Janvier 2019</td>
+                                            <td class="border-bottom-0"><a href="#"><i class="fas fa-ellipsis-v text-dark setting-button"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="ressources/images/dawn_soto.jpg" class="img-user"/></td>
+                                            <td>Dawn Soto<br><span>@dawn.soto</span></td>
+                                            <td>15 Janvier 2019</td>
+                                            <td class="border-bottom-0"><a href="#"><i class="fas fa-ellipsis-v text-dark setting-button"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="ressources/images/cover-hamza.jpg" class="img-user"/></td>
+                                            <td>Hamza Al-Farissi<br><span>@sauce-god.hamza</span></td>
+                                            <td>23 Fevrier 2019</td>
+                                            <td class="border-bottom-0"><a href="#"><i class="fas fa-ellipsis-v text-dark setting-button"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="ressources/images/steven_mason.jpg" class="img-user"/></td>
+                                            <td>Steven Mason<br><span>@steven.mason</span></td>
+                                            <td>9 Mars 2019</td>
+                                            <td class="border-bottom-0"><a href="#"><i class="fas fa-ellipsis-v text-dark setting-button"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="ressources/images/danny-rivera.jpg" class="img-user"/></td>
+                                            <td>Danny Rivera<br><span>@danny.rivera</span></td>
+                                            <td>16 Mars 2019</td>
+                                            <td class="border-bottom-0"><a href="#"><i class="fas fa-ellipsis-v text-dark setting-button"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="border-bottom-0"><img src="ressources/images/david_richardson.jpg" class="img-user"/></td>
+                                            <td class="border-bottom-0">David Richardson<br><span>@david.richardson</span></td>
+                                            <td class="border-bottom-0">19 Mars 2019</td>
+                                            <td class="border-bottom-0"><a href="#"><i class="fas fa-ellipsis-v text-dark setting-button"></i></a></td>
+                                        </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-0 mt-2">
+                    <div class="row">
+                        <div class="col-md-12 mobile-app-stat">
+                            <h3>Mobile download</h3>
+
+                        <iframe src='//charts.hohli.com/embed.html?created=1552995036459#w=320&h=320&d={"containerId":"chart","dataTable":{"cols":[{"label":"","type":"string","p":{}},{"label":"","type":"number"}],"rows":[{"c":[{"v":"Jan"},{"v":75}]},{"c":[{"v":"Feb"},{"v":70}]},{"c":[{"v":"Mar"},{"v":46}]},{"c":[{"v":"Apr"},{"v":68}]},{"c":[{"v":"May"},{"v":85}]},{"c":[{"v":"Jun"},{"v":90}]},{"c":[{"v":"Jul"},{"v":56}]}]},"options":{"hAxis":{"useFormatFromData":true,"viewWindow":null,"minValue":null,"maxValue":null,"viewWindowMode":null},"legacyScatterChartLabels":true,"series":{"0":{}},"vAxes":[{"useFormatFromData":true,"viewWindow":{"max":null,"min":null},"minValue":null,"maxValue":null},{"useFormatFromData":true,"viewWindow":{"max":null,"min":null},"minValue":null,"maxValue":null}],"isStacked":false,"booleanRole":"certainty","legend":"right","width":500,"height":300},"state":{},"view":{"columns":null,"rows":null},"isDefaultVisualization":false,"chartType":"ColumnChart"}' frameborder='0' width='600' height='320'></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 user-setting mx-0 mt-2">
+                    <h3>Registration</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="ressources/images/registration-chart.svg"/>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+            </div>
+        </div>
+    
+    </section>
+    
+
+
+
+</body>

@@ -1,0 +1,626 @@
+/* DOCUMENT INFORMATION
+    -Document rap theme
+    -Version 1.0.0
+    -Author : Kanha
+*/
+
+/* COLORS
+    -Defaut body text 
+    -h1                
+    -h2               
+    -h3               
+    -h4
+
+    -button : 
+    -button:hover :
+
+
+    -border : 
+*/
+
+
+/*FONTS
+    -Default : ZCOOL QingKe Huang You / Kanit / Oswald
+    -Subtitle
+*/
+
+
+/*CSS Directory
+    1. = GLOBAL
+    2. = HEADER
+        2.1. = CAROUSEL
+        2.2. = NAVBAR
+    3. = NEWS & TRENDING
+    4. = MUSIC PLAYER
+    5. = VIDEO
+    6. = MOBILE APP
+    7. = FOOTER
+
+*/
+
+
+/*GLOBAL
+=============*/
+html {
+    background-color: #fff;
+}
+
+h1 {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    color: #fff;
+    text-transform: uppercase;
+    word-spacing: 8px;
+    font-weight: 500;
+    font-size: 90px;
+}
+
+p {
+    font-family: "Kanit", sans-serif;
+}
+
+h2, h3 {
+    font-family: "Kanit", sans-serif;
+    text-transform: uppercase;
+    
+}
+
+time {
+    display: block;
+    margin: 0;
+    font-size: 15px;
+}
+
+.text {
+    position: absolute;
+    display: block;
+    margin-left: 120px;
+}
+
+.text a {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 30px;
+    
+}
+
+.text a:hover {
+    color: rgba(235, 40, 40, 0.84);
+    text-decoration: none;
+}
+
+.text .comment:hover{
+    color: #0027ff;
+}
+/*HEADER
+=============*/
+
+/*
+header {
+    background-image: linear-gradient(rgba(72, 83, 97, 0.6), rgba(40, 49, 59, 0.74)), url(../images/favela.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+*/
+
+/*
+.home_title {
+    text-align: center;
+    margin-top: 25%;
+}
+*/
+
+/*
+.home_title h1{
+    font-size: 800%;
+}
+
+.home_title p {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+*/
+/*
+header {
+    height: 100%;
+}
+*/
+
+/*CAROUSEL ====== */
+
+.carousel-item {
+/*    background-position: center;*/
+/*    position: relative;*/
+    text-transform: uppercase;
+    height: 100vh;
+}
+.carousel-item img {
+/*    position: relative;*/
+    min-height: 500px;
+/*    background-color: rgba(128, 128, 128, 0.81);*/
+}
+.carousel-caption h1{
+/*    color: #262626;*/
+    font-size: 800%;
+}
+.carousel-caption p {
+    margin-bottom: 250px;
+    font-size: 25px;
+}
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 0 10px;
+}
+
+/*NAVBAR ====== */
+.navbar-brand {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 40px;
+}
+.navbar-nav a {
+    font-family: 'Kanit', sans-serif;
+/*    text-align: center;*/
+}
+
+.navbar-nav h3 {
+    font-size: 20px;
+    text-align: center;
+}
+.navbar-nav a li {
+/*    color: white;*/
+}
+
+
+/*POPUP
+=============*/
+/*Connexion*/
+.user {
+    text-align: right;
+}
+.user .btn-connexion, .user .btn-inscription {
+    color: white;
+    font-size: 17px;
+    font-family: 'Kanit', sans-serif;
+    padding:0 10px;
+}
+
+.user .btn-connexion:hover,.user .btn-inscription:hover {
+    text-decoration: none;
+}
+
+.modal-body {
+    font-family: 'Kanit', sans-serif;
+}
+
+.cancel, .send, .retour {
+    font-family: 'Kanit', sans-serif;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 0 10px;
+}
+
+.send a {
+    color: black;
+}
+
+.send a:hover{
+    text-decoration: none;
+}
+
+#name, #password {
+    display: inline;
+}
+/*Inscription*/
+
+.sign-in-content {
+    padding: 10px 0;
+}
+
+.sign-in-content .name_and_frstname, .sign-in-content .username_and_pswd {
+    padding-bottom: 10px;
+
+}
+
+sign-in-content .name_and_frstname .name {
+    padding-right: 10px;
+}
+
+.inscription-mdp .inscription a,.inscription-mdp .mdp a {
+    color: darkblue;
+}
+
+
+/*NEWS
+=============*/
+.news h2 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 300%;
+}
+
+.article1 .img1 {
+    background-image: linear-gradient(rgba(72, 83, 97, 0.6), rgba(40, 49, 59, 0.12)), url(../images/brooke-cagle.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    height: 300px;
+    margin-bottom: 30px;
+    transition: 500ms;
+}
+
+.article1 .img1:hover{
+    background-position: bottom;
+    transition: 1s;
+}
+
+.txt-article1 a {
+    color: #fff;
+    position: absolute;
+/*    right: 10px;*/
+    bottom: 40px;
+    left: 25px;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    
+}
+
+.article3 .img3 {
+    background-image: url(../images/scratch.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); /*pas d'ombre alors que code indique box shadow, a demander lundi */
+    height: 100px;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.article4 .img4 {
+    background-image: url(../images/rapeur.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); /*pas d'ombre alors que code indique box shadow, a demander lundi */
+    height: 100px;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.article5 .img5 {
+    background-image: url(../images/women.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); /*pas d'ombre alors que code indique box shadow, a demander lundi */
+    height: 100px;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.article6 .img6 {
+    background-image: url(../images/pnl.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    height: 100px;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+
+
+/*TRENDING
+=============*/
+.news {
+    position: relative;
+/*    margin-left:40px;*/
+/*    left: 90px;*/
+}
+.trending h2 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 300%;
+}
+
+.article2 .img2 {
+    background-image: url(../images/records.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 150px;
+    margin-bottom: 30px;
+    transition: 500ms;
+}
+.article2 .img2:hover {
+    background-position: bottom;
+    transition: 1s;
+
+}
+
+.txt-article2 a {
+    position: absolute;
+    color: #fff;
+    bottom: 35px;
+    left: 25px;
+    font-size: 28px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+.article7 .img7 {
+    background-image: url(../images/alpha_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    height: 100px;
+    width: 100px;
+    margin-bottom: 30px;
+}    
+
+.article8 .img8 {
+    background-image: url(../images/dj-panel-control.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    height: 100px;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.article9 .img9 {
+    background-image: url(../images/julian-howard.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    height: 100px;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.article10 .img10 {
+    background-image: url(../images/cover-hamza.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    height: 100px;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+
+/*MUSIC PLAYER
+=============*/
+.music-player {
+    background-image: linear-gradient(rgba(72, 83, 97, 0.6), rgba(40, 49, 59, 0.74)), url(../images/graph_header.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+/*    height: 120vh;*/
+}
+
+.top-charts h2 {
+    color: #fff;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    font-size: 300%;
+}
+
+.top-us h3, .top-fr h3 {
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    margin-bottom: 30px;
+
+}
+
+.single-music {
+    background-color: rgba(34, 34, 34, 0.91);
+    border-radius: 5px;
+    padding: 20px 30px;
+/*    height: 140px;*/
+/*    width: 500px;*/
+    margin-bottom: 20px;
+/*    margin-right: 10px;*/
+}
+
+.music-content {
+    overflow: auto;
+}
+
+.music-content .number {
+    float: left;
+    width: 40px;
+}
+
+.number {
+    color: #fff;
+    padding-top: 20px;
+}
+.music-cover {
+    float: left;
+    margin: auto;
+    margin-right: 20px;
+}
+
+.cover {
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+}
+
+.cover:hover {
+    width: 90px;
+    height: 90px;
+}
+
+.music-title a {
+    color: white;
+    padding-top: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+}
+.music-content .number h4 {
+    font-family: 'Kanit', sans-serif;
+} 
+audio {
+/*    width: 50%;*/
+    position: relative;
+    padding-top: 10px;
+    margin-left: 30px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+/*VIDEO
+=============*/
+.video-page {
+    margin-top: 30px;
+}
+.video {
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.video h2 {
+/*    text-align: center;*/
+/*
+    margin-top: 30px;
+    margin-bottom: 30px;
+*/
+    margin: 30px 0;
+    font-size: 300%;
+    
+}
+
+.video h3 {
+    font-size: 150%;
+    font-family: 'Kanit';
+}
+.ytb-video {
+    position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+    margin-bottom: 30px;
+}
+.ytb-video iframe,  
+.ytb-video object,  
+.ytb-video embed {
+	position: absolute;
+/*	top: 0;*/
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.video a {
+    text-transform: none;
+    color: black;
+}
+
+/*MOBILE APP
+=============*/
+
+.mobile-app {
+    background-image: linear-gradient(rgba(72, 83, 97, 0.46), rgba(40, 49, 59, 0.74)), url(../images/people-concert.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.phone-image {
+    background-image: url(../images/phone.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 200px;
+/*    width: 300px;*/
+    vertical-align: middle;
+    margin: 30px 0px;
+    text-align: center;
+/*    right: 50px;*/
+}
+
+.mobile-app h2, .mobile-app p {
+    color: #fff;
+}
+.mobile-app-content h2{
+    margin: 30px 0;
+    font-size: 200%;
+    text-align: center;
+}
+
+.app-btn {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.app-btn .google_play_button{
+    margin-right: 10px;
+}
+
+/*FOOTER
+=============*/
+.copyright, .social-network {
+    margin: 20px 0;
+    text-align: center;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+}
+
+.copyright a {
+    color: black;
+}
+.copyright p {
+    font-family: 'Kanit', sans-serif;
+}
+
+.facebook i, .twitter i, .instagram i, .snapchat i, .twitch i {
+    color: black;
+    font-size: 30px;
+    padding-right: 5px;
+}
+.facebook i:hover {
+    color: #3b5998;
+    font-size: 33px;
+}
+.twitter i:hover {
+    color: #1da1f2;
+    font-size: 33px;
+}
+.instagram i:hover {
+    color: #fb3958;
+    font-size: 33px;
+}
+.snapchat i:hover {
+    color: #e6e600;
+    font-size: 33px;
+}
+.twitch i:hover {
+    color: #6440a5;
+    font-size: 33px;
+}

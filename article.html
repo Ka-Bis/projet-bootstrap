@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Gump</title>
+
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
+
+
+    <!-- STYLE-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="ressources/css/css-article.css">
+
+</head>
+
+<body>
+    <header>
+        <section>
+        <a href="index.html" class="return"> <i class="fas fa-arrow-circle-left"></i> Retour à l'accueil</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 home_title">
+                    <h1>Projet Bootstrap </h1>
+                   <p><time datetime="2019-03-14T14h23">14th March at 14:23</time> | <span> Autor : Ksy</span></p>
+                </div>
+            </div>
+        </div>
+        </section>
+    </header>
+    
+<!-- Setting button popup-->
+<div class="modal fade bd-modal-sm" id="setting-popup" tabindex="-1" role="dialog" aria-labelledby="setting-popupLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm setting" role="document" style="width: 200px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="setting-popupLabel">Setting</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="report">
+          <a href="#report" data-toggle="modal" data-dismiss="modal">Report</a>
+          </div>
+          <div class="remove">
+          <a href="#remove" data-toggle="modal" data-dismiss="modal">Remove</a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<!-- Report popup -->    
+<div class="modal fade bd-modal" id="report" tabindex="-1" role="dialog" aria-labelledby="reportLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 75%;">
+      <div class="modal-header">
+        <h6 class="modal-title" id="reportLabel">Report</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <p>Quel est le probleme mec ?</p>
+          <div class="report-answer">
+              <ul>
+              <li><input type="radio" name="radio" value="radio" style="margin-right: 10px;"><label>Contenu offensant ou haineux</label></li>
+              <li><input type="radio" name="radio" value="radio" style="margin-right: 10px;"><label>Spam ou contenu trompeur</label></li>
+              <li><input type="radio" name="radio" value="radio" style="margin-right: 10px;"><label>Incitation à la haine ou images violentes</label></li>
+              <li><input type="radio" name="radio" value="radio" style="margin-right: 10px;"><label>Harcèlement ou intimidation</label></li>
+              </ul>
+              
+            <div class="modal-footer">
+            <button class="cancel" type="reset" value="cancel" data-dismiss="modal">Annuler</button>
+            <button type="submit" class="send" value="send" data-dismiss="modal"><a href="#report-ok" data-toggle="modal" style="color: black;">Valider</a></button>
+            </div>
+              
+          </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Report-ok popup -->    
+<div class="modal fade bd-modal" id="report-ok" tabindex="-1" role="dialog" aria-labelledby="report-okLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 75%;">
+      <div class="modal-header">
+        <h6 class="modal-title" id="report-okLabel">Report</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <p>Report registered !</p>
+
+          <div class="modal-footer">
+            <button class="cancel" type="reset" value="cancel" data-dismiss="modal">Annuler</button>
+            <button type="submit" class="send" value="send" data-dismiss="modal">Valider</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+<!-- Remove popup -->    
+<div class="modal fade bd-modal" id="remove" tabindex="-1" role="dialog" aria-labelledby="reportLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="width: 75%;">
+      <div class="modal-header">
+        <h6 class="modal-title" id="reportLabel">Remove</h6>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <p>Voulez-vous supprimer ce commentaire ?</p>
+      </div>
+        <div class="modal-footer">
+            <button class="cancel" type="reset" value="cancel" data-dismiss="modal">Annuler</button>
+            <button type="submit" class="send" value="send" data-dismiss="modal">Valider</button>
+        </div>
+    </div>
+  </div>
+</div>
+    
+ <!-- ARTICLE ET SON CONTENU
+=========================== -->    
+    
+    <section class="article">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 share">
+                 <div class="social-network-share">
+                    <ul>
+                    <li><p><i class="fas fa-share-alt-square" id="share-btn"></i></p></li>
+                    <div id="reseaux"> 
+                        <li>
+                            <a href="" class="facebook-bis"><i class="fab fa-facebook" title="Facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="" class="twitter-bis"><i class="fab fa-twitter" title="Twitter"></i></a>
+                             </li>
+                        <li>
+                            <a href="" class="instagram-bis" class="instagram"><i class="fab fa-instagram" title="Instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="" class="snapchat-bis"><i class="fab fa-snapchat-square" title="Snapchat"></i></a>
+                        </li>
+                        <li>
+                            <a href="" class="twitch-bis"><i class="fab fa-twitch" title="Twitch"></i></a>
+                        </li>
+                    </div>
+                    </ul>
+                    
+                </div>
+                </div>
+                
+                <div class="col-md-10 article-content">
+                    <h2>Titre article</h2>
+                <p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages.</p><br>
+                    
+                <p>Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words. If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family.</p>
+                
+                <h2>Titre 2 article</h2>
+                <p>The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.</p><br>
+
+                <p>If several languages coalesce, the grammar of the resulting language is more simple and regular than that of the individual languages. The new common language will be more simple and regular than the existing European languages. It will be as simple as Occidental; in fact, it will be Occidental. To an English person, it will seem like simplified English, as a skeptical Cambridge friend of mine told me what Occidental is. The European languages are members of the same family.</p><br>
+                    
+                <div class="categorie">
+                    <a href="#"><i class="fas fa-tag"></i> Tag:</a>
+                    <a href="#"><span>Tutorial</span>,</a>
+                    <a href="#"><span>Projet Bootstrap</span>,</a>
+                    <a href="#"><span>ARINFO</span>,</a>
+                    <a href="#"><span>Ksy</span></a>
+                </div> 
+                      
+ 
+ <!--ZONE DE COMMENTAIRE
+=========================== -->
+                    
+<!-- ======================== Premier commentaire ======================== -->
+        <div class="row">
+            <h2>Commentaires</h2>
+            <div class="col-md-12 comment-area">
+                <div class="comments">
+                    <blockquote>
+                        
+                        <!-- Utilisateur -->
+                        <cite>
+                            <p>
+                            <img src="ressources/images/dawn_soto.jpg"/>Dawn Soto -
+                            <time datetime="2019-03-12"><span>March 12th 2019</span></time> 
+                            <a href="#setting-popup" data-toggle="modal"><i class="fas fa-ellipsis-v setting-button"></i></a>
+                            </p>
+
+                        </cite>
+                        
+                        <!-- Nombre de like/dislike -->
+                        <div class="like-dislike">
+                            <p><span>6 <i class="fas fa-heart"></i></span>  
+                            <span>2 <i class="fas fa-heart-broken"></i></span>
+                            </p>
+                        </div>
+                        
+                        <!-- Commentaire de l'utilisateur-->
+                        <span class="comment-user">AMAZING ! Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. #Contenudequalitelol</span>
+
+                        <!-- Boutton like/dislike/reply -->
+                        <div class="button">
+                            <a href="#" class="btn btn-like">Like <i class="fas fa-heart"></i></a>
+                            <a href="#" class="btn btn-dislike">Dislike <i class="fas fa-heart-broken"></i></a>
+                            <a href="#" class="btn btn-reply">Reply <i class="fas fa-reply"></i></a>
+                        </div>
+
+<!-- ======================== Reponse du commentaire precedent ======================== -->
+                        <div class="reply-comment">
+                            <blockquote>
+                                
+                                <!-- Utilisateur -->
+                                <cite>
+                                    <p>
+                                    <img src="ressources/images/cover-hamza.jpg"/>Sauce God -
+                                    <time datetime="2019-03-12"><span>March 12th 2019</span></time>
+                                    <a href="#setting-popup" data-toggle="modal"><i class="fas fa-ellipsis-v setting-button"></i></a>
+                                    </p>
+                                    <p>Sauce God to Dawn Soto</p>
+                                </cite>
+                                
+                                <!-- Nombre de like/dislike -->
+                                <div class="like-dislike">
+                                    <p><span>1 <i class="fas fa-heart"></i></span>  
+                                    <span>0 <i class="fas fa-heart-broken"></i></span>
+                                    </p>
+                                </div>
+                                
+                            <!-- Commentaire de l'utilisateur-->
+                            <span class="comment-user">Voyez ce jeu exquis wallon, de graphie en kit mais bref. Portez ce vieux whisky au juge blond qui fume sur son île intérieure, à côté de(SALUT) l'alcôve ovoïde, où les bûches se consument dans l'âtre, ce qui lui permet de penser à la cænogenèse de l'être dont il estmassa.#Paradise #Saucegod</span> 
+                            
+                            <!-- Boutton like/dislike/reply -->
+                            <div class="button">
+                            <a href="#" class="btn btn-like">Like <i class="fas fa-heart"></i></a>
+                            <a href="#" class="btn btn-dislike">Dislike <i class="fas fa-heart-broken"></i></a>
+                            <a href="#" class="btn btn-reply">Reply <i class="fas fa-reply"></i></a>
+                            </div>
+                                
+                            </blockquote>
+                        </div>
+                        
+                        <div class="reply-comment">
+                            <blockquote>
+                                
+                                <!-- Utilisateur -->
+                                <cite>
+                                    <p>
+                                    <img src="ressources/images/steven_mason.jpg"/>Steven Mason -
+                                    <time datetime="2019-03-12"><span>March 12th 2019</span></time>
+                                    <a href="#setting-popup" data-toggle="modal"><i class="fas fa-ellipsis-v setting-button"></i></a>
+                                    </p>
+                                    <p> Steven Mason to Dawn Soto</p>
+                                </cite>
+                                
+                                <!-- Nombre de like/dislike -->
+                                <div class="like-dislike">
+                                    <p><span>1 <i class="fas fa-heart"></i></span>  
+                                    <span>0 <i class="fas fa-heart-broken"></i></span>
+                                    </p>
+                                </div>
+                                
+                               <!-- Commentaire de l'utilisateur-->
+                               <span class="comment-user">Voyez ce jeu exquis wallon, de graphie en kit mais bref. </span> 
+                            
+                            <!-- Boutton like/dislike/reply -->
+                            <div class="button">
+                            <a href="#" class="btn btn-like">Like <i class="fas fa-heart"></i></a>
+                            <a href="#" class="btn btn-dislike">Dislike <i class="fas fa-heart-broken"></i></a>
+                            <a href="#" class="btn btn-reply">Reply <i class="fas fa-reply"></i></a>
+                            </div>
+                                
+<!-- ======================== Reponse du commentaire precedent ======================== -->
+                                <!--Reponse de la reponse -->
+                                <div class="re-reply-comment">
+                                    <blockquote>
+                                
+                                    <!-- Utilisateur -->
+                                    <cite>
+                                        <p>
+                                        <img src="ressources/images/danny-rivera.jpg"/>Danny Rivera -
+                                        <time datetime="2019-03-12"><span>March 12th 2019</span></time>
+                                        <a href="#setting-popup" data-toggle="modal"><i class="fas fa-ellipsis-v setting-button"></i></a>
+                                        </p>
+                                        <p>Danny Rivera to Steven Mason</p>
+                                    </cite>
+                                        
+                               <!-- Commentaire de l'utilisateur-->
+                               <span class="comment-user">Voyez ce jeu exquis wallon, de graphie en kit mais bref. </span> 
+                                        
+                                <!-- Boutton like/dislike/reply -->
+                                <div class="button">
+                                <a href="#" class="btn btn-like">Like <i class="fas fa-heart"></i></a>
+                                <a href="#" class="btn btn-dislike">Dislike <i class="fas fa-heart-broken"></i></a>
+                                <a href="#" class="btn btn-reply">Reply <i class="fas fa-reply"></i></a>
+                                </div>
+                                
+                                </blockquote>
+                            </div>
+                                
+                            </blockquote>
+                        </div>
+                        
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+            
+<!-- ======================== Deuxieme commentaire ======================== -->                    
+        <div class="row">
+
+            <div class="col-md-12 comment-area">
+                <div class="comments">
+
+
+                    <blockquote>
+                        
+                        <!-- Utilisateur -->
+                        <cite>
+                            <p>
+                            <img src="ressources/images/brooke-cagle.jpg"/>Booke Cagle -
+                            <time datetime="2019-03-12"><span>March 12th 2019</span></time>
+                            <a href="#setting-popup" data-toggle="modal"><i class="fas fa-ellipsis-v setting-button"></i></a>
+                            </p>
+
+                        </cite>
+                        
+                        <!-- Nombre de like/dislike -->
+                        <div class="like-dislike">
+                            <p><span>15 <i class="fas fa-heart"></i></span>
+                            <span>1 <i class="fas fa-heart-broken"></i></span>
+                            </p>
+                        </div>
+                        
+                        <!-- Commentaire de l'utilisateur-->
+                        <span class="comment-user">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span>
+
+                        <!-- Boutton like/dislike/reply -->
+                        <div class="button">
+                            <a href="#" class="btn btn-like">Like <i class="fas fa-heart"></i></a>
+                            <a href="#" class="btn btn-dislike">Dislike <i class="fas fa-heart-broken"></i></a>
+                            <a href="#" class="btn btn-reply">Reply <i class="fas fa-reply"></i></a>
+                        </div>
+
+
+<!--    "Zone de reponse inactif. Si besoin pour un visuel : decommenter le code"
+
+                        <div class="reply-comment">
+                            <blockquote>
+                                <cite>
+                                    <p>
+                                    <img src="ressources/images/cover-hamza.jpg"/>Sauce God -
+                                    <time datetime="2019-03-12"><span>March 12th 2019</span></time>
+                                    </p>
+                                    <p>Sauce God to Dawn Soto</p>
+                                </cite>
+
+                               <span class="comment-user">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span> 
+                            </blockquote>
+                        </div>
+--><!-- WARNING ! : NE PAS EFFACER !!! -->
+
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+            
+<!-- ======================== Troisieme commentaire ======================== -->
+                    
+        <div class="row">
+
+            <div class="col-md-12 comment-area">
+                <div class="comments">
+                    <blockquote>
+                        
+                        <!-- Utilisateur -->
+                        <cite>
+                            <p>
+                            <img src="ressources/images/david_richardson.jpg"/>David Richardson -
+                            <time datetime="2019-03-12"><span>March 12th 2019</span></time>
+                            <a href="#setting-popup" data-toggle="modal"><i class="fas fa-ellipsis-v setting-button"></i></a>
+                            </p>
+
+                        </cite>
+                        
+                        <!-- Nombre de like/dislike -->
+                        <div class="like-dislike">
+                            <p><span>3 <i class="fas fa-heart"></i></span>  
+                            <span>4 <i class="fas fa-heart-broken"></i></span>
+                            </p>
+                        </div>
+                        
+                        <!-- Commentaire de l'utilisateur-->
+                        <span class="comment-user">En se réveillant un matin après des rêves agités, Gregor Samsa se retrouva, dans son lit, métamorphosé en un monstrueux insecte. Il était sur le dos</span>
+
+                        <!-- Boutton like/dislike/reply -->
+                        <div class="button">
+                            <a href="#" class="btn btn-like">Like <i class="fas fa-heart"></i></a>
+                            <a href="#" class="btn btn-dislike">Dislike <i class="fas fa-heart-broken"></i></a>
+                            <a href="#" class="btn btn-reply">Reply <i class="fas fa-reply"></i></a>
+                        </div>
+
+
+<!--    "Zone de reponse inactif. Si besoin pour un visuel : decommenter le code"
+
+                        <div class="reply-comment">
+                            <blockquote>
+                                <cite>
+                                    <p>
+                                    <img src="ressources/images/cover-hamza.jpg"/>Sauce God -
+                                    <time datetime="2019-03-12"><span>March 12th 2019</span></time>
+                                    </p>
+                                    <p>Sauce God to Dawn Soto</p>
+                                </cite>
+
+                               <span class="comment-user">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</span> 
+                            </blockquote>
+                        </div>
+--><!-- WARNING ! : NE PAS EFFACER !!! -->
+                        
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+          
+<!-- ======================== ECRITURE DU COMMENTAIRE ======================== -->
+        <div class="row">
+            <div class="col-md-12 form">
+                <h2>Ajouter un commentaire</h2>
+                <form>
+                <div>
+                    <label>Nom ou Pseudo :</label><input type="text" placeholder="Ex: Simon Horthon" id="name"/>
+                </div>
+                <div>
+                    <label>Commentaire :</label>
+                    <textarea id="message" rows="3" class="message"></textarea>
+                </div>
+                <div>
+                    <button class="send" type="submit" value="send">Envoyer</button>
+                    <button class="cancel" type="reset" value="cancel">Annuler</button>
+                </div>
+                </form>
+            </div>            
+        </div>
+   
+                </div> <!-- Fin col-md-10-->
+            </div>
+        </div> <!--Fin container-->
+    </section>
+
+<!--MOBILE APP
+================================= -->
+    
+    <section class="mobile-app" id="mobile-app">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 phone-image">
+                        <!--image dans le css -->
+                </div>
+                <div class="col-md-6 mobile-app-content" >
+                    <h2> Mobile app</h2>
+                    <p>For more content, dowload GUMP. This is the app version of our site. This app is  available for Android and Ios.</p>
+                    <div class="row>">
+                        <div class="col-md-12 app-btn">
+                            <a href=""><img src="ressources/images/google-play.png" class="google_play_button"alt="google play button"/></a>
+                            <a href=""><img src="ressources/images/app-store.png" class="app_store_button" alt="app store button"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+    
+
+
+<!-- FOOTER
+================================= -->
+
+    <footer>
+        
+        <div class="social-network" id="social-network">
+            <a href="" class="facebook"><i class="fab fa-facebook" ></i></a>
+            <a href="" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="" class="instagram" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="" class="snapchat"><i class="fab fa-snapchat"></i></a>
+            <a href="" class="twitch"><i class="fab fa-twitch"></i></a>
+        </div>
+            
+        <div class="copyright">
+            <p>Copyright <i class="far fa-copyright"></i> GUMP - Made by Ksy | 2019 All Rights Reserved | <a href="/">Legal Mention</a></p>
+        </div>
+
+    
+    </footer>
+    
+
+
+<!--JS SCRIPTS
+================================= -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
