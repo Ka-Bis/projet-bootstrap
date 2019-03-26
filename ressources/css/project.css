@@ -137,7 +137,7 @@ header {
 }
 .carousel-item img {
 /*    position: relative;*/
-    min-height: 500px;
+    min-height: 50vh;
 /*    background-color: rgba(128, 128, 128, 0.81);*/
 }
 .carousel-caption h1{
